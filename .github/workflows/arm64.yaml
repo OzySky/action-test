@@ -18,4 +18,4 @@ jobs:
       - name: Setup cross toolchain
         # Alpine 3.15 ships with libstc++.28 so we must build with gcc 10 until 3.16 is shipped
         run: |
-          ls -a && ls -a aa
+          ls -a && ls -a aa && cp -r aa/aarch64-linux-musl-crosstools aarch64-linux-musl-cross && ls && ls aarch64-linux-musl-cross
